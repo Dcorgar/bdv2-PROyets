@@ -1,0 +1,10 @@
+seed 1: crea datos ficticios de el usuario administrador 1, este da un hash de ejemplo por lo que habrá que crear el usuario mediante addUser o postman
+
+seed 2: crea tareas ficticias para admin para llenar el dashboard
+
+seed 3: crea tareas ficticias para user para llenar el dashboard
+
+
+- Los seed se introducen mediante: type seed.sql | docker exec -i postgres-db-v1 psql -U myuser -d mydb
+
+- Cambiar datos a otros usuarios: UPDATE "tarea" SET id_usuario_asignado = 23 WHERE id_usuario_asignado = 22;
